@@ -1,244 +1,102 @@
 const initialData = [
-    {
-      bookName: "The Catcher in the Rye",
-      authorName: "J.D. Salinger",
-      ISBN: "9780316769174",
-      genre: "Fiction"
-    },
-    {
-      "bookName": "To Kill a Mockingbird",
-      "authorName": "Harper Lee",
-      "ISBN": "9780060935467",
-      "genre": "Fiction"
-    },
-    {
-      "bookName": "1984",
-      "authorName": "George Orwell",
-      "ISBN": "9780451524935",
-      "genre": "Science Fiction"
-    },
-    {
-      "bookName": "Pride and Prejudice",
-      "authorName": "Jane Austen",
-      "ISBN": "9780141439518",
-      "genre": "Romance"
-    },
-    {
-      "bookName": "The Great Gatsby",
-      "authorName": "F. Scott Fitzgerald",
-      "ISBN": "9780743273565",
-      "genre": "Fiction"
-    },
-    {
-      "bookName": "Moby-Dick",
-      "authorName": "Herman Melville",
-      "ISBN": "9781853260087",
-      "genre": "Adventure"
-    },
-    {
-      "bookName": "Jane Eyre",
-      "authorName": "Charlotte Bronte",
-      "ISBN": "9780141441146",
-      "genre": "Romance"
-    },
-    {
-      "bookName": "The Hobbit",
-      "authorName": "J.R.R. Tolkien",
-      "ISBN": "9780618260300",
-      "genre": "Fantasy"
-    },
-    {
-      "bookName": "The Lord of the Rings",
-      "authorName": "J.R.R. Tolkien",
-      "ISBN": "9780618640157",
-      "genre": "Fantasy"
-    },
-    {
-      "bookName": "Harry Potter and the Philosopher's Stone",
-      "authorName": "J.K. Rowling",
-      "ISBN": "9780747532743",
-      "genre": "Fantasy"
-    },
-    {
-      "bookName": "The Chronicles of Narnia",
-      "authorName": "C.S. Lewis",
-      "ISBN": "9780064471190",
-      "genre": "Fantasy"
-    },
-    {
-      "bookName": "Animal Farm",
-      "authorName": "George Orwell",
-      "ISBN": "9780452284241",
-      "genre": "Satire"
-    },
-    {
-      "bookName": "Brave New World",
-      "authorName": "Aldous Huxley",
-      "ISBN": "9780060850524",
-      "genre": "Science Fiction"
-    },
-    {
-      "bookName": "The Odyssey",
-      "authorName": "Homer",
-      "ISBN": "9780140449112",
-      "genre": "Epic"
-    },
-    {
-      "bookName": "The Divine Comedy",
-      "authorName": "Dante Alighieri",
-      "ISBN": "9780141195872",
-      "genre": "Epic"
-    },
-    {
-      "bookName": "The Grapes of Wrath",
-      "authorName": "John Steinbeck",
-      "ISBN": "9780143039433",
-      "genre": "Fiction"
-    },
-    {
-      "bookName": "Wuthering Heights",
-      "authorName": "Emily Bronte",
-      "ISBN": "9780141439556",
-      "genre": "Gothic"
-    },
-    {
-      "bookName": "Frankenstein",
-      "authorName": "Mary Shelley",
-      "ISBN": "9780141439471",
-      "genre": "Gothic"
-    },
-    {
-      "bookName": "The Picture of Dorian Gray",
-      "authorName": "Oscar Wilde",
-      "ISBN": "9780141442464",
-      "genre": "Gothic"
-    },
-    {
-      "bookName": "Fahrenheit 451",
-      "authorName": "Ray Bradbury",
-      "ISBN": "9781451673319",
-      "genre": "Science Fiction"
-    },
-    {
-      "bookName": "The Alchemist",
-      "authorName": "Paulo Coelho",
-      "ISBN": "9780062315007",
-      "genre": "Fiction"
-    },
-    {
-      "bookName": "Crime and Punishment",
-      "authorName": "Fyodor Dostoevsky",
-      "ISBN": "9780140449136",
-      "genre": "Fiction"
-    },
-    {
-      "bookName": "The Scarlet Letter",
-      "authorName": "Nathaniel Hawthorne",
-      "ISBN": "9780486280486",
-      "genre": "Romance"
-    },
-    {
-      "bookName": "The Adventures of Tom Sawyer",
-      "authorName": "Mark Twain",
-      "ISBN": "9780486400778",
-      "genre": "Adventure"
-    },
-    {
-      "bookName": "One Hundred Years of Solitude",
-      "authorName": "Gabriel Garcia Marquez",
-      "ISBN": "9780060883287",
-      "genre": "Magical Realism"
-    },
-    {
-      "bookName": "Don Quixote",
-      "authorName": "Miguel de Cervantes Saavedra",
-      "ISBN": "9780060934347",
-      "genre": "Adventure"
-    },
-    {
-      "bookName": "Anna Karenina",
-      "authorName": "Leo Tolstoy",
-      "ISBN": "9780143035008",
-      "genre": "Fiction"
-    },
-    {
-      "bookName": "The Count of Monte Cristo",
-      "authorName": "Alexandre Dumas",
-      "ISBN": "9780140449266",
-      "genre": "Adventure"
-    },
-    {
-      "bookName": "War and Peace",
-      "authorName": "Leo Tolstoy",
-      "ISBN": "9780143039990",
-      "genre": "Historical Fiction"
-    },
-    {
-      "bookName": "The Kite Runner",
-      "authorName": "Khaled Hosseini",
-      "ISBN": "9781594631931",
-      "genre": "Fiction"
-    },
-    {
-      "bookName": "The Hobbit",
-      "authorName": "J.R.R. Tolkien",
-      "ISBN": "9780618260300",
-      "genre": "Fantasy"
-    },
-    {
-      "bookName": "The Lord of the Rings",
-      "authorName": "J.R.R. Tolkien",
-      "ISBN": "9780618640157",
-      "genre": "Fantasy"
-    },
-    {
-      "bookName": "Harry Potter and the Sorcerer's Stone",
-      "authorName": "J.K. Rowling",
-      "ISBN": "9780590353427",
-      "genre": "Fantasy"
-    },
-    {
-      "bookName": "The Chronicles of Narnia",
-      "authorName": "C.S. Lewis",
-      "ISBN": "9780064404990",
-      "genre": "Fantasy"
-    },
-    {
-      "bookName": "The Hunger Games",
-      "authorName": "Suzanne Collins",
-      "ISBN": "9780439023481",
-      "genre": "Science Fiction"
-    },
-    {
-      "bookName": "The Girl with the Dragon Tattoo",
-      "authorName": "Stieg Larsson",
-      "ISBN": "9780307269751",
-      "genre": "Mystery"
-    },
-    {
-      "bookName": "The Da Vinci Code",
-      "authorName": "Dan Brown",
-      "ISBN": "9780307474278",
-      "genre": "Mystery"
-    },
-    {
-      "bookName": "Gone Girl",
-      "authorName": "Gillian Flynn",
-      "ISBN": "9780307588371",
-      "genre": "Thriller"
-    },
-    {
-      "bookName": "The Fault in Our Stars",
-      "authorName": "John Green",
-      "ISBN": "9780525478812",
-      "genre": "Young Adult"
-    },
-    {
-      "bookName": "Dune",
-      "authorName": "Frank Herbert",
-      "ISBN": "9780441172719",
-      "genre": "Science Fiction"
-    }
+  {
+    "position": "Software Engineer",
+    "company": "ABC Tech",
+    "location": "New York, NY",
+    "salary": 100000,
+    "description": "Seeking a talented Software Engineer with experience in JavaScript, Node.js, React, and MongoDB."
+  },
+  {
+    "position": "Frontend Developer",
+    "company": "XYZ Solutions",
+    "location": "San Francisco, CA",
+    "salary": 90000,
+    "description": "Looking for a Frontend Developer proficient in HTML, CSS, JavaScript, and React."
+  },
+  {
+    "position": "Backend Developer",
+    "company": "123 Enterprises",
+    "location": "Chicago, IL",
+    "salary": 80000,
+    "description": "Hiring a Backend Developer skilled in Node.js, Express, MongoDB, and RESTful APIs."
+  },
+  {
+    "position": "UI/UX Designer",
+    "company": "Design Co.",
+    "location": "Seattle, WA",
+    "salary": 85000,
+    "description": "Looking for a creative UI/UX Designer with proficiency in Adobe Creative Suite and wireframing tools."
+  },
+  {
+    "position": "Data Scientist",
+    "company": "Data Analytics Inc.",
+    "location": "Boston, MA",
+    "salary": 110000,
+    "description": "Seeking a skilled Data Scientist experienced in machine learning, data mining, and statistical analysis."
+  },
+  {
+    "position": "Product Manager",
+    "company": "Tech Innovations",
+    "location": "Austin, TX",
+    "salary": 120000,
+    "description": "Hiring a Product Manager with strong communication and leadership skills to lead product development efforts."
+  },
+  {
+    "position": "DevOps Engineer",
+    "company": "Cloud Solutions Ltd.",
+    "location": "Denver, CO",
+    "salary": 100000,
+    "description": "Seeking a DevOps Engineer with experience in cloud computing, CI/CD pipelines, and infrastructure automation."
+  },
+  {
+    "position": "Full Stack Developer",
+    "company": "Tech Startup X",
+    "location": "Portland, OR",
+    "salary": 90000, 
+    "description": "Join our fast-growing team as a Full Stack Developer with experience in frontend and backend technologies."
+  },
+  {
+    "position": "Cybersecurity Analyst",
+    "company": "Security Solutions LLC",
+    "location": "Atlanta, GA",
+    "salary": 80000,
+    "description": "Seeking a Cybersecurity Analyst to monitor and analyze security threats, CISSP or related certifications preferred."
+  },
+  {
+    "position": "Mobile App Developer",
+    "company": "App Innovations Inc.",
+    "location": "Miami, FL",
+    "salary": 100000,
+    "description": "Hiring a Mobile App Developer to design and develop innovative mobile applications for iOS and Android platforms."
+  },
+  {
+    "position": "Systems Administrator",
+    "company": "Tech Solutions Group",
+    "location": "Dallas, TX",
+    "salary": 70000,
+    "description": "Seeking a Systems Administrator experienced in managing IT infrastructure, Linux and Windows servers."
+  },
+  {
+    "position": "Network Engineer",
+    "company": "Networking Solutions Inc.",
+    "location": "Houston, TX",
+    "salary": 880000,
+    "description": "Hiring a Network Engineer to design, implement, and maintain network infrastructure, CCNA or related certifications preferred."
+  },
+  {
+    "position": "Business Analyst",
+    "company": "Business Consulting Group",
+    "location": "Philadelphia, PA",
+    "salary": 90000,
+    "description": "Join our team as a Business Analyst with strong analytical and problem-solving skills."
+  },
+  {
+    "position": "Quality Assurance Engineer",
+    "company": "QA Solutions Ltd.",
+    "location": "Phoenix, AZ",
+    "salary": 70000,
+    "description": "Seeking a Quality Assurance Engineer to ensure the quality of software products and services."
+  }
 ]
 
 module.exports = initialData
